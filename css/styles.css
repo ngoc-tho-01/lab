@@ -1,0 +1,112 @@
+body {
+  margin: 0px;
+}
+
+.cv-document {
+  box-sizing: border-box;
+  border: none;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: arial, sans-serif, tahoma;
+  font-size: 10pt;
+}
+
+.cv-page {
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  text-decoration: none;
+  width: 900px;
+  min-height: 900px;
+  margin: 0 auto;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+  position: relative;
+
+  padding: 40px;
+}
+/*chỉnh lề cho trang web*/
+.section {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+/* thiét lập cho phàn h2*/
+.section-title {
+  border-bottom: 2px solid;
+  text-transform: uppercase;
+  font-weight: 600px;
+}
+
+/*thiết lập cỡ chữ và khoảng cách cho phần h3*/
+h3 {
+  font-size: 20px;
+  margin-bottom: 1px;
+}
+/*thiết lập cho phần tiêu đề h1*/
+h1 {
+  color: #0e2452;
+  font-size: 40px;
+  margin-bottom: 1px;
+}
+/* thiết lập cho phần hình ảnh*/
+.image {
+  width: 113px;
+  right: 113px;
+  position: absolute;
+  top: 80px;
+  right: 80px;
+}
+
+/*thiết lập cho nội dung*/
+.content1 {
+  display: inline-block;
+  width: 40%;
+  text-align: left;
+  vertical-align: top;
+}
+.content2 {
+  display: inline-block;
+}
+/*dùng để xóa dấu gạch chân phần liên hệ */
+a {
+  text-decoration: none;
+}
+/*tạo timeline cho phần nội dung*/
+.timeline div {
+  content: "";
+  position: relative;
+  margin: 0px;
+  padding-bottom: 1em;
+  padding-left: 20px;
+  height: 50%;
+}
+.timeline div ::before {
+  content: "";
+  background-color: #c5c5c5;
+  position: absolute;
+  bottom: 0px;
+  top: 0px;
+  left: 1px;
+  width: 1px;
+}
+.timeline div ::after {
+  content: "";
+  background-color: black;
+  border: 0.1875em soid black;
+  border-radius: 50%;
+  position: absolute;
+  left: -3px;
+  top: 20px;
+  height: 8px;
+  width: 8px;
+}
